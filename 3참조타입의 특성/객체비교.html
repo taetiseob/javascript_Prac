@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var a = 100;
+            var b = 100;
+            
+            var objA = {value:100};
+            var objB = {value:100};
+            var objC = objB;
+            
+            console.log(a===b);//출력값 true a b 둘다 기본타입
+            console.log(objA == objB); //출력값 false  참조타입의 경우 참조값이 같아야 true가 된다,
+            console.log(objB == objC); //출력값 true
+        </script>
+    </body>
+</html>

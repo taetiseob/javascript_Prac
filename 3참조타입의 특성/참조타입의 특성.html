@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+            var objA = {
+                val:40
+            }
+            var objB = objA;
+            //같은 값이 아닌 같은 참조값을 가진다.
+            console.log(objA.val);
+            console.log(objB.val);
+            
+            objB.val = 50;
+            console.log(objA.val);
+            console.log(objB.val);
+        </script>
+    </body>
+</html>
