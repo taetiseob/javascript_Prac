@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //함수 선언 방식으로 add()함수 정의
+            function add(x,y){
+                return x+y;
+            }
+            
+            //add() 함수 객체에 result, status프로퍼티 추가
+            add.result = add(3,2);//프로퍼티의 동적생성
+            add.status = 'OK';
+            
+            console.log(add.result);
+            console.log(add.status);
+            console.dir(add);
+        </script>
+    </body>
+</html>

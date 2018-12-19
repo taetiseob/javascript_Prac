@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //1.함수 선언문
+            //함수 선언문 형태로 정의한 함수의 유효 범위는 코드의 맨 처음부터 시작한다
+            console.log(add(2,3));
+            
+            function add(x,y){
+                return x+y;
+            }
+            
+            console.log(add(3,4));
+            
+            //함수 선언문 형태로 add() 함수 정의
+            
+            //2.함수 표현식
+            //함수 표현방식과 함수 호이스팅
+            /*console.log(add1(2,3));*///ncaught type error
+            
+            //함수 표현식형태로 add()함수의 정의
+            var add1 = function (x,y){
+                return x+y;
+            }
+            console.log(add1(4,5));
+        </script>
+    </body>
+</html>
