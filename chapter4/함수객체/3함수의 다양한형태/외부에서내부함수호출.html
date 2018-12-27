@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function parent(){
+                var a = 100;
+                //child()내부함수
+                var child = function (){
+                    console.log(a);
+                }
+
+                //child() 함수 반환
+                return child;
+                }
+
+                var inner = parent();
+                inner();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //클로저의 생성/독립적인 헬퍼함수 구현 용도
+            //parent() 함수 정의
+            function parent(){
+                var a = 100;
+                var b = 200;
+
+                //child() 내부함수 정의
+                function child(){
+                    var b = 300;
+
+                    console.log(a);
+                    //내부함수에는 자신을 둘러싼 부모 함수의 변수에 접근이 가능하다
+                    console.log(b);
+                }
+                child();
+            }
+            parent();
+            child();
+        </script>
+    </body>
+</html>

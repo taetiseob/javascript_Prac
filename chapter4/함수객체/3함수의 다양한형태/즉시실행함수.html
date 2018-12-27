@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <script>
+            //즉시실행함수 예제코드
+            (function(name){
+                console.log('this is the immediate function->'+name);
+            })('foo');
+
+            //jQuery에서 사용된 즉시 실행 함수
+            (function (window,undefined){
+
+            })(window);
+        </script>
+    </body>
+</html>
