@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function getData(callback){
+                //new Promise()추가
+                return new Promise(function(resolve, reject){
+                    $.get('url 주소/products/1', function(respone){
+                        //데이터를 받으면 resolve()호출
+                        resolve(respone);
+                    });
+                });
+            }
+
+            //getData()의 실행이 끝나면 호출되는 then()
+            getData().then(function(tableData){
+                //resolve()의 결과 값이 여기로 전달됨
+                console.log(tableData);
+                //$.get()의 respone값이 tableData에 전달됨
+            });
+        </script>
+    </body>
+</html>
